@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+/*
+nav{
+    background: black;
+    height: 80px;
+    width: 100%;
+////////////
+        position: absolute;
+    width: 700px;
+    z-index: -1;
+    right: 0;
+}*/
+
+.enlace{
+  margin-left: 30px;
+  height: 50px;
+  width: 50px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+   
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+  color: #000;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding-bottom: 2px;
+  border-bottom-style: ridge;
+  border-bottom-color: #000000; 
+  border-bottom-width: 1px;
+}
+
+li a.active, li a:hover{
+   background: #00FF00;
+    color: #000;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    /*para que se vea en disk*/
+    display: none;
+}
+#check{
+    display: none;
+}
+.centrado{
+    padding:15px;
+    font-size: 40px;
+    text-align:center;
+    color: rgb(255, 255, 255);
+}
+
+/*FONDO DE PANTALLA*/
+body {
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    background: url(/css/images/circle.svg) no-repeat;
+    background-position: left 115% top 350px;
+  }
+
+
+.titulo {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 205, 41);
+    margin-top: 20vh;
+    animation: flotar 2s linear infinite alternate;
+}
+@keyframes flotar {
+    to {
+      margin-top: 15vh;
+    }
+}
+.burbujas div {
+    background: rgb(2, 189, 37);
+    border-radius: 100%;
+    position: absolute;
+    bottom: 0;
+    animation: animarburbujas 4s linear infinite;
+}
+.burbujas div:nth-child(1) {
+    width: 60px;
+    height: 45px;
+    left: 40px;
+    animation-duration: 7s;
+}
+.burbujas div:nth-child(2) {
+    width: 70px;
+    height: 65px;
+    left: 25%;
+    animation-duration: 8s;
+}
+.burbujas div:nth-child(3) {
+    width: 40px;
+    height: 37px;
+    left: 40%;
+    animation-duration: 7s;
+}
+.burbujas div:nth-child(4) {
+    width: 75px;
+    height: 70px;
+    left: 50%;
+    animation-duration: 10s;
+}
+.burbujas div:nth-child(5) {
+    width: 65px;
+    height: 60px;
+    left: 65%;
+    animation-duration: 6.5s;
+}
+.burbujas div:nth-child(6) {
+    width: 60px;
+    height: 58px;
+    left: 85%;
+    animation-duration: 9s;
+}
+.burbujas div:nth-child(7) {
+    width: 45px;
+    height: 32px;
+    left: 90%;
+    animation-duration: 6s;
+}
+.burbujas div:nth-child(8) {
+    width: 25px;
+    height: 15px;
+    left: 75%;
+    animation-duration: 8s;
+}
+.burbujas div:nth-child(9) {
+    width: 35px;
+    height: 25px;
+    left: 70%;
+    animation-duration: 8s;
+}
+.burbujas div:nth-child(10) {
+    width: 35px;
+    height: 25px;
+    left: 80%;
+    animation-duration: 9s;
+}
+
+  @keyframes animarburbujas {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    3% {
+      width: 30px;
+      height: 27px;
+    }
+    50% {
+      margin-left: 20px;
+      opacity: 0.5;
+    }
+    100% {
+      transform: rotate(90deg);
+      bottom: 100vh;
+      background: rgb(7, 237, 19);
+    }
+  }
+
+  .circle-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .circle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50%;
+  }
+  
+  .text {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    font-size: 16px;
+    color: white;
+    mix-blend-mode: difference;
+    -webkit-text-stroke: 2px black;
+    z-index: 1;
+  }
+  .info{
+    margin-top: 50px;
+  }
+
+  .info .info2 img{
+    margin-top: -5%;
+    margin-right: 200px;
+    height: 250px;
+    height: 200px;
+
+  }
+.letra{
+    font-size: 160px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10%;
+}
+@media (max-width:1200px) {
+  .letra{
+    font-size: 250%;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10%;
+}
+  
+}

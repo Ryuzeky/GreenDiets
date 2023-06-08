@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frameset muestra frames 1, 2 y 3</title>
+</head>
+<frameset cols="25%,*">
+<frame id="frmIzquierdo" name="frmIzquierdo" src="frame1.html">
+    <frameset rows="12%,*">
+        <frame id="frmSuperior" name="frmSuperior" src="frame2.html">
+      <frame id="frmInferior" name="frmInferior" src="frame3.html"> 
+    </frameset>
+    
+</frameset>
+<noframes>
+    <body>
+        Sun navegador no soporta frames
+    </body>
+</noframes>
+</html>

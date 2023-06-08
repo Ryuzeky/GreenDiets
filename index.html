@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriMenu</title>
+    <link rel="stylesheet" href="/css/style.css">
+       <!--
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   --> 
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        </label>
+
+        <a href="index.html" class="enlace">
+           <img class="logo" src="images/log.png" alt="">   
+        </a>
+        <ul>
+            <li><a href="/html/dieta.html">Dieta</a></li>
+            <li><a href="/html/frame.html">Ejercicios</a></li>
+            <li><a href="/html/informacion.html">Informacion</a></li>
+            <li><a href="/html/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="burbujas">
+        <img src="" alt="">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <article class="form-register">
+            <form >     
+                <h2>Calculadora de peso y altura (IMC)</h2>
+                <br>
+                 <input class="controls" type="text" id="peso" placeholder="Ingrese su peso">
+                    <input class="controls" type="text" id="altura" placeholder="Ingrese su altura">       
+                   <input class="controls" type="button" value="Enviar" onclick="imc()">   
+                    <p id="resultado"></p><br>
+            </form> 
+    </article> 
+    <article>
+        <div>
+            <img class="fondoimg" src="/images/formdieta.svg" alt="">
+        </div>
+    </article>
+   
+    
+    <script type="text/javascript" src="JS/DietaIMC.js"></script>
+</body>
+</html>
